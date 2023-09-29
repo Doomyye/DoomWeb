@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Saira:wght@300&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 14, 14);
+    align-items: center;
+    justify-content: center;
+    animation: fadeInAnimation ease-in 0.7s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+     }
+}
+
+#li, a, #b1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(32, 9, 9);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 3%;
+}
+
+#lg{
+    width: 2.8%;
+    height: 1%;
+    margin-right: 55%;
+}
+
+#logo{
+    cursor: pointer;
+}
+
+#links{
+    list-style: none;
+}
+
+#links li{
+    display: inline-block;
+    padding: 9px 50px;
+    
+}
+
+#links li a{
+    transition: all 0.5s ease-in-out 1ms ;
+}
+
+#links li a:hover{
+    color: rgb(87, 87, 87);
+}
+
+#b1{
+    padding: 9px 12px;
+    background-color: rgb(63, 31, 31);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+#b1:hover{
+    background-color: rgb(107, 53, 53);
+    color: black;
+}
+
+#pageimg{
+    background-image: url(page.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    animation: animate 0s linear infinite;
+}
+
+@keyframes animate
+{
+    0% {
+        background-position: 0 0;
+    }
+
+    100%{
+        background-position: 1880 0;
+    }
+}
+
+#myintro{
+    padding: 10px 50px;
+    animation: transitionIn 0.75;
+}
+
+#myintro hr{
+    border: rgb(32, 9, 9) solid;
+}
+
+#myintro h1{
+    color: white;
+    text-shadow: 4px 4px black;
+    text-indent: 100px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#myabout h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: 4px 4px black;
+    line-height: 100px;
+    padding-left: 5%;
+    font-size: 60px;
+}
+
+#Hobbies{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: 4px 4px black;
+    line-height: 40px;
+    font-size: 30px;
+    width: 14%;
+    height: 30%;
+    float: left;
+    margin-left: 100px;
+}
+
+#Quotes{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: 4px 4px black;
+    line-height: 40px;
+    font-size: 30px;
+    float: left;
+    width: 60%;
+    height: 30%;
+    margin-left: 10%;
+    font-family: 'Playfair Display', serif;
+}
+
+#Quotes ul #a{
+    color: rgb(141, 4, 4);
+}
+
+#Quotes ul #b{
+    color: rgb(101, 168, 255);
+}
+
+#Quotes ul #c{
+    color: rgb(143, 0, 43);
+}
+
+#Quotes ul #d{
+    color: rgb(204, 48, 0);
+}
+
+#Hobbies li{
+    list-style: disc;
+    font-size: 30px;
+}
+
+
+#Hobbies ol #a{
+    color:green;
+}
+
+#Hobbies ol #b{
+    color:brown;
+}
+
+#Hobbies ol #c{
+    color:plum;
+}
+
+#Hobbies ol #d{
+    color:rgb(150, 192, 255);
+}
+
+#mt{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    padding-top: 5px;
+    font-family: 'Saira', sans-serif;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #9b4b0a, #9b4b0a, #9b0a0a, #ffffff, #ffffff, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+}
+
+form{
+    background-color: rgb(32, 9, 9);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 30%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+form h2{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 20px 0;
+    padding: 20px;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+form button{
+    padding: 15px;
+    background: rgb(146, 72, 72);
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0px;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.5s ease-in-out 1ms;
+}
+
+form button:hover{
+    background-color: rgb(179, 87, 87) ;
+    color: black;
+}
+
+#project1{
+    display: inline-flex;
+    padding: 100px 10px;
+    width: 90%;
+    height: 50%;
+    float: left;
+}
+
+#project1 .img{
+    display: inline-flex;
+    padding: 30px 40px;
+    width: 100%;
+    height: 100%;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1ms;
+}
+
+#project1 .img:hover{
+    transform: translateY(-10px);
+}
+
+
+#project1 h2{
+    padding: 0px 50px;
+    color: white;
+    text-shadow: 4px 4px black;
+    font-size: 28px;
+    font-family: 'Saira', sans-serif;
+    word-spacing: 10px;
+}
+
+#project1 a{
+    color: white;
+    text-shadow: 4px 4px black;
+    font-size: 28px;
+    font-family: 'Saira', sans-serif;
+}
+
+#project2{
+    display: inline-flex;
+    padding: 100px 10px;
+    width: 90%;
+    height: 50%;
+    justify-content: right;
+    float: right;
+}
+
+#project2 .img{
+    display: inline-flex;
+    padding: 30px 40px;
+    width: 100%;
+    height: 100%;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1ms;
+}
+
+#project2 .img:hover{
+    transform: translateY(-10px);
+}
+
+#project2 h2{
+    padding: 0px 50px;
+    color: white;
+    text-shadow: 4px 4px black;
+    font-size: 28px;
+    font-family: 'Saira', sans-serif;
+    word-spacing: 10px;
+    text-align: left;
+}
+
+#project2 a{
+    color: white;
+    text-shadow: 4px 4px black;
+    font-size: 28px;
+    font-family: 'Saira', sans-serif;
+}
+
+#project2 #a{
+    color: rgb(216, 105, 53);
+    text-shadow: 4px 4px black;
+    font-size: 28px;
+    font-family: 'Saira', sans-serif;
+}
+
+#project2 #b{
+    color: rgb(58, 88, 187);
+    text-shadow: 4px 4px black;
+    font-size: 28px;
+    font-family: 'Saira', sans-serif;
+}

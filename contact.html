@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="another.css">
+        <link rel="icon" type="image/type" href="logo.png">
+    </head>
+    
+    <body>
+        <header> 
+            <div id="lg"><a href="mainpage.html"><img id="logo" src="logo.png" style="width: 50px;"></a></div>
+                <nav>
+                    <ul id="links">
+                        <li id="top">
+                            <a href="aboutme.html">About me</a>
+                        </li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="intro.html">Introduction</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <a alt="not working" id="contact" href="contact.html"><button id="b1">Contact me! </button></a>
+        </header>
+        <div id="form">
+            <form action="https://formsubmit.co/doomywebsites@gmail.com" method="POST">
+                <h2>Send me a Message! <br><br> (Broken due to gmail smtp not working.)</h2>
+                  <input type="text" name="name" required placeholder="Your Name">
+                    <input type="email" name="email" required placeholder="Your Email">
+                        <input type="text" name="subject" required placeholder="Your Subject">
+                            <textarea name="Message" required rows="4" placeholder="Message"></textarea>
+                                <input type="hidden" name="_next" value="anotherpage.html">
+                                    <button type="submit" id="b2">Send</button>
+            </form>
+        </div>
+    </body>
+</html>
